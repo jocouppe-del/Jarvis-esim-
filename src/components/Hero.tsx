@@ -24,7 +24,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Link
             href={`/${locale}/esim/region/asia`}
-            className="rounded-xl bg-teal-500 px-5 py-3 text-sm font-medium text-black hover:bg-teal-400"
+            className="rounded-xl bg-amber-400 px-5 py-3 text-sm font-semibold text-black hover:bg-amber-300"
           >
             Explore Asia
           </Link>
