@@ -32,19 +32,19 @@ export default async function CountryPage({
         <div className="rounded-2xl border border-border/60 bg-card/50 p-5">
           <div className="text-sm font-semibold">Best value</div>
           <div className="mt-1 text-sm text-muted-foreground">
-            (affiliate offer placeholder)
+            affiliate offer placeholder
           </div>
         </div>
         <div className="rounded-2xl border border-border/60 bg-card/50 p-5">
           <div className="text-sm font-semibold">Unlimited</div>
           <div className="mt-1 text-sm text-muted-foreground">
-            (affiliate offer placeholder)
+            affiliate offer placeholder
           </div>
         </div>
         <div className="rounded-2xl border border-border/60 bg-card/50 p-5">
           <div className="text-sm font-semibold">Short trip</div>
           <div className="mt-1 text-sm text-muted-foreground">
-            (affiliate offer placeholder)
+            affiliate offer placeholder
           </div>
         </div>
       </div>
