@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Locale } from "@/i18n";
-import { getCountryByCode } from "@/data/esim";
+import { getCountryByCode, regions, type RegionCode, type Region } from "@/data/esim";
+import CountryHero from "@/components/CountryHero";
 
 export default async function CountryPage({
   params,
@@ -11,16 +12,18 @@ export default async function CountryPage({
   const c = getCountryByCode(country);
   if (!c) return notFound();
 
+  const r = regions.find((x) => x.code === (c.region as RegionCode)) as Region;
+
   return (
     <div className="space-y-8">
-      <div className="rounded-3xl border border-border/60 bg-card/50 p-6 md:p-8">
-        <div className="text-xs text-muted-foreground">Best eSIM for</div>
-        <h1 className="mt-1 text-3xl font-semibold md:text-4xl">{c.name}</h1>
-        <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+      <CountryHero country={c} region={r} />
+
+      <div className="rounded-2xl border border-border/60 bg-card/50 p-6">
+        <p className="max-w-2xl text-sm text-muted-foreground">
           Compare popular plans, pick the best value, and get connected in
           minutes.
         </p>
-        <div className="mt-5 text-sm text-muted-foreground">
+        <div className="mt-4 text-sm text-muted-foreground">
           Typical plans: {c.typicalPlans.join(" · ")}
         </div>
       </div>

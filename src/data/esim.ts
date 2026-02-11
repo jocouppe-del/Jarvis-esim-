@@ -11,6 +11,7 @@ export type Country = {
   region: RegionCode;
   tagline: string;
   typicalPlans: string[];
+  image?: string; // Unsplash/Pexels URL
 };
 
 const countries: Country[] = [
@@ -20,6 +21,8 @@ const countries: Country[] = [
     region: "asia",
     tagline: "Tokyo · Kyoto · Osaka",
     typicalPlans: ["5GB / 7 days", "10GB / 15 days", "Unlimited"],
+    image:
+      "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "TH",
@@ -27,6 +30,8 @@ const countries: Country[] = [
     region: "asia",
     tagline: "Bangkok · Chiang Mai · Islands",
     typicalPlans: ["3GB / 7 days", "10GB / 15 days", "Unlimited"],
+    image:
+      "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "US",
@@ -34,6 +39,8 @@ const countries: Country[] = [
     region: "americas-north",
     tagline: "NYC · LA · Road trips",
     typicalPlans: ["5GB / 7 days", "20GB / 30 days", "Unlimited"],
+    image:
+      "https://images.unsplash.com/photo-1546436836-07a91091f160?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "FR",
@@ -41,6 +48,8 @@ const countries: Country[] = [
     region: "europe",
     tagline: "Paris · Riviera · Alps",
     typicalPlans: ["3GB / 7 days", "10GB / 15 days", "20GB / 30 days"],
+    image:
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "ES",
@@ -48,6 +57,8 @@ const countries: Country[] = [
     region: "europe",
     tagline: "Barcelona · Madrid · Islands",
     typicalPlans: ["3GB / 7 days", "10GB / 15 days", "20GB / 30 days"],
+    image:
+      "https://images.unsplash.com/photo-1508778552286-12d4d0507c3a?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "BR",
@@ -55,6 +66,8 @@ const countries: Country[] = [
     region: "americas-south",
     tagline: "Rio · São Paulo · Beaches",
     typicalPlans: ["3GB / 7 days", "10GB / 15 days", "20GB / 30 days"],
+    image:
+      "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1600&q=70",
   },
   {
     code: "AU",
@@ -62,6 +75,8 @@ const countries: Country[] = [
     region: "oceania",
     tagline: "Sydney · Melbourne · Outback",
     typicalPlans: ["5GB / 7 days", "20GB / 30 days", "Unlimited"],
+    image:
+      "https://images.unsplash.com/photo-1506973035872-a4f23efdc050?auto=format&fit=crop&w=1600&q=70",
   },
 ];
 

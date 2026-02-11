@@ -1,5 +1,4 @@
 import Image from "next/image";
-import type { Locale } from "@/i18n";
 import type { Region } from "@/data/esim";
 
 export default function RegionHero({
